@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "share", "share\share.vcxproj", "{70F8810E-58CD-402F-84D8-8FCC3A359365}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "portscanner", "portscanner\portscanner.vcxproj", "{4A7FF7CD-5679-4D4D-AC55-212B4FCF0D5E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{70F8810E-58CD-402F-84D8-8FCC3A359365} = {70F8810E-58CD-402F-84D8-8FCC3A359365}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scannerlib", "scannerlib\scannerlib.vcxproj", "{64B5C8C9-96C0-4388-9224-0845D7E77576}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unittests", "unittests\unittests.vcxproj", "{F7CC7F2E-F9AD-4C4E-912B-883483A01A1D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{70F8810E-58CD-402F-84D8-8FCC3A359365} = {70F8810E-58CD-402F-84D8-8FCC3A359365}
+		{64B5C8C9-96C0-4388-9224-0845D7E77576} = {64B5C8C9-96C0-4388-9224-0845D7E77576}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "authscanner", "authscanner\authscanner.vcxproj", "{0B8E07C0-B90C-4124-9280-EF7E2E6E9DB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70F8810E-58CD-402F-84D8-8FCC3A359365}.Debug|x64.ActiveCfg = Debug|x64
+		{70F8810E-58CD-402F-84D8-8FCC3A359365}.Debug|x64.Build.0 = Debug|x64
+		{70F8810E-58CD-402F-84D8-8FCC3A359365}.Release|x64.ActiveCfg = Release|x64
+		{70F8810E-58CD-402F-84D8-8FCC3A359365}.Release|x64.Build.0 = Release|x64
+		{4A7FF7CD-5679-4D4D-AC55-212B4FCF0D5E}.Debug|x64.ActiveCfg = Debug|x64
+		{4A7FF7CD-5679-4D4D-AC55-212B4FCF0D5E}.Debug|x64.Build.0 = Debug|x64
+		{4A7FF7CD-5679-4D4D-AC55-212B4FCF0D5E}.Release|x64.ActiveCfg = Release|x64
+		{4A7FF7CD-5679-4D4D-AC55-212B4FCF0D5E}.Release|x64.Build.0 = Release|x64
+		{64B5C8C9-96C0-4388-9224-0845D7E77576}.Debug|x64.ActiveCfg = Debug|x64
+		{64B5C8C9-96C0-4388-9224-0845D7E77576}.Debug|x64.Build.0 = Debug|x64
+		{64B5C8C9-96C0-4388-9224-0845D7E77576}.Release|x64.ActiveCfg = Release|x64
+		{64B5C8C9-96C0-4388-9224-0845D7E77576}.Release|x64.Build.0 = Release|x64
+		{F7CC7F2E-F9AD-4C4E-912B-883483A01A1D}.Debug|x64.ActiveCfg = Debug|x64
+		{F7CC7F2E-F9AD-4C4E-912B-883483A01A1D}.Debug|x64.Build.0 = Debug|x64
+		{F7CC7F2E-F9AD-4C4E-912B-883483A01A1D}.Release|x64.ActiveCfg = Release|x64
+		{F7CC7F2E-F9AD-4C4E-912B-883483A01A1D}.Release|x64.Build.0 = Release|x64
+		{0B8E07C0-B90C-4124-9280-EF7E2E6E9DB5}.Debug|x64.ActiveCfg = Debug|x64
+		{0B8E07C0-B90C-4124-9280-EF7E2E6E9DB5}.Debug|x64.Build.0 = Debug|x64
+		{0B8E07C0-B90C-4124-9280-EF7E2E6E9DB5}.Release|x64.ActiveCfg = Release|x64
+		{0B8E07C0-B90C-4124-9280-EF7E2E6E9DB5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {262CAAC8-A63E-48D0-9ABB-BC2677C429DA}
+	EndGlobalSection
+EndGlobal

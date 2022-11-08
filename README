@@ -1,0 +1,6 @@
+Still in development.
+
+ScannerSolution is a set of solutions for scanning a network for vulnerabilities through:
+* port availability check
+* network protocol detection
+* password dictionary authentication bruteforcing
